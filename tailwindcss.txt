@@ -1,6 +1,27 @@
 for online practice: https://play.tailwindcss.com/
 
+<!--CSS file -->
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+<!--Config file -->
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: "class",
+  theme: {
+    extend: {
+      // ...
+    },
+  },
+  plugins: [],
+}
+
+
+<!--HTML file -->
 <main class="p-5">
 <h1 class="text-center text-lg text-green-400">Test Text</h1>
 
